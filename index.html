@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Jinwoo Bae</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>  
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Jinwoo Bae</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./Profile_Pic.jpeg" alt="Jinwoo Bae profile picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Jinwoo Bae</h1>
+            <p class="section_text_p2">Full-Stack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./JB resume.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./linkedin.png" alt="My LinkedIn profile"
+                class="icon" onclick="location.href='https://linkedin.com/in/jinwoo-bae-2652a1101'">
+                <img src="./github-mark.png" alt="My Github page"
+                class="icon" onclick="location.href='https://github.com/bbae0312'">
+            </div>
+        </div> 
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img 
+                    src="./Profile_Pic1.jpeg"
+                    alt="Profile picture"
+                    class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-containers">
+                        <img 
+                            src="education.jpeg" 
+                            alt="Education icon"
+                            class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>B.S. Bachelors Degree in Software Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        A recent graduate from San Jose State University with a passion for crafting digital experiences. 
+                        Armed with a degree in Software Engineer and a keen interest in full-stack development, I embark on my journey as a versatile developer. 
+                        My academic journey at SJSU has equipped me with a solid foundation in Java and Python, and I'm excited to apply my knowledge to real-world projects. 
+                        What fuels my enthusiasm is the opportunity to create user-centric websites that not only meet but exceed expectations. 
+                        I thrive on the challenges of coding, problem-solving, and the continuous learning that comes with the dynamic world of web development. 
+                        Join me on this coding adventure, where each line of code is a step toward innovation and a better digital tomorrow. 
+                        <br>Let's build something amazing together!
+                    </p>
+                </div>
+            </div>
+        </div> 
+        <img 
+            src="arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow" 
+            onclick="location.href='./#projects'" 
+        />      
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+            <div class="about-containers">
+                <div class="details-containers color-container">
+                    <div class="article-container">
+                        <img 
+                            src="./Project1.png"
+                            alt="Project 1"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One: Ecommerce</h2>
+                    <div class="btn-container">
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/bbae0312/My_Ecommerce'"
+                        >
+                            Github
+                        </button>
+                    </div>
+                </div>
+                <div class="details-containers color-container">
+                    <div class="article-container">
+                        <img 
+                            src="./Project2.png"
+                            alt="Project 2"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two: To-DO List</h2>
+                    <div class="btn-container">
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/HyebeenEmma/TodoStudy_React'"
+                        >
+                            Github
+                        </button>
+                    </div>
+                </div>
+                <div class="details-containers color-container">
+                    <div class="article-container">
+                        <img 
+                            src="./Project3.png"
+                            alt="Project 3"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Three: Gomoku</h2>
+                    <div class="btn-container">
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/bbae0312/Gomoku'"
+                        >
+                            Github
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow" 
+            onclick="location.href='./#contact'" 
+        />     
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <dic class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img
+                src="./Email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:jinwoo.bae@sjsu.edu">jinwoo.bae@sjsu.edu</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img
+                    src="./linkedin.png"
+                    alt="LinkedIn icon"
+                    class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/jinwoo-bae-2652a1101/">LinkedIn</a></p>
+            </div>
+        </dic>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; Jinwoo Bae. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
